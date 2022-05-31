@@ -32,9 +32,9 @@
 <meta property="article:published_time" content="2016-10-29T16:00:00.000Z">
 <meta property="article:modified_time" content="2022-05-29T08:45:19.278Z">
 <meta property="article:author" content="shanhuji">
+<meta property="article:tag" content="分享">
 <meta property="article:tag" content="攻略">
 <meta property="article:tag" content="游戏">
-<meta property="article:tag" content="分享">
 <meta property="article:tag" content="单机">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://shanhuji.com/images/13.jpeg">
@@ -94,7 +94,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">34</span></a></li><li class="menu-item menu-item-categories"><a href="/categories" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">32</span></a></li><li class="menu-item menu-item-categories"><a href="/categories" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a></li><li class="menu-item menu-item-monsterbook"><a href="/monsterbook" rel="section"><i class="fa fa-archive fa-fw"></i>妖怪大百科</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -171,12 +171,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags">
-        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -335,8 +335,8 @@
 <li>运行E:\ton\SOUNDDRV 文件夹里的SETSOUND.EXE设置声卡驱动。（<span style="color: #ff0000;">这里很关键，第一行是不用设置的 先不要设置第一行，直接设置第二行，</span> 挨个试 只要能通过OK 的，就 能 有声啦 ！第一项设不设置没用 游戏本身就有音效 我们需要的是背景音乐而已 另外不用DOSBOX 也 能在XP下运行 就是把兼容性改成WIN95 不 过 就没音乐了，只有音效）</li>
 <li>更改虚拟光驱盘符，名称要在真实光驱前面，<span style="color: #ff0000;">即把虚拟光驱的盘符改为至少在其中一个物理硬盘盘符的前面</span>。（更改方法可通过控制面板－性能和维护－管理工具－计算机管理－磁盘管理－先右击真实光驱－更改驱动器名称与路径－更改（先选较后的名称如I：）－再右击虚拟光驱－更改驱动器名称与路径－更改（选原来的真实光驱的名称如G：）－最后右击真实光驱（如I：）－更改驱动器名称与路径－更改（选原来的虚拟光驱的名称如H：）。这样子就可以玩了，但没有CD音乐。</li>
 <li>安装dosbox（如0.73版），并运行dosbox0.73</li>
-<li>在dosbox程序二个窗口中命令窗口中依次输入：(<span style="color: #ff0000;">括号内为解释不用输</span>）<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mount c e:\ton // 将e:\ton 虚拟为C:</span><br><span class="line">mount d g:\ -c cdrom // 将g:盘虚拟D:并作为音乐光驱，注意，这里-c前面有个空格，不要连着</span><br><span class="line">c: // 进入E:\ton</span><br><span class="line">play //运行游戏程序，OK了，若要全屏，用Alt+Enter</span><br></pre></td></tr></table></figure></li>
-<li>每次玩这样输入比较麻烦，可以自已更改dosbox-0.73.conf文件（目录在C:\Documents and Settings\lenovo\Local Settings\Application Data\DOSBox）（lenovo为用户名，每人不一样）<br>用记事本打开dosbox-0.73.conf，在最后的[autoexec]项中添加第5个操作就行了，如：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mount c E:\ton</span><br><span class="line">mount d g:\ -t cdrom</span><br><span class="line">C:</span><br><span class="line">play</span><br></pre></td></tr></table></figure>
+<li>在dosbox程序二个窗口中命令窗口中依次输入：(<span style="color: #ff0000;">括号内为解释不用输</span>）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mount c e:\ton // 将e:\ton 虚拟为C:</span><br><span class="line">mount d g:\ -c cdrom // 将g:盘虚拟D:并作为音乐光驱，注意，这里-c前面有个空格，不要连着</span><br><span class="line">c: // 进入E:\ton</span><br><span class="line">play //运行游戏程序，OK了，若要全屏，用Alt+Enter</span><br></pre></td></tr></table></figure></li>
+<li>每次玩这样输入比较麻烦，可以自已更改dosbox-0.73.conf文件（目录在C:\Documents and Settings\lenovo\Local Settings\Application Data\DOSBox）（lenovo为用户名，每人不一样）<br>用记事本打开dosbox-0.73.conf，在最后的[autoexec]项中添加第5个操作就行了，如：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mount c E:\ton</span><br><span class="line">mount d g:\ -t cdrom</span><br><span class="line">C:</span><br><span class="line">play</span><br></pre></td></tr></table></figure>
 然后保存，<br>以后每次要玩直接运行dosbox程序就行了，会自动加载。</li>
 </ol>
 <p>赶紧打开游戏试一下吧，那美妙的江南丝竹乐是不是已经响起来了呢？</p>
@@ -352,9 +352,9 @@
   <img src="/images/14.bmp"/ align="center" width="500px">
 </div>
           <div class="post-tags">
+              <a href="/tags/%E5%88%86%E4%BA%AB/" rel="tag"># 分享</a>
               <a href="/tags/%E6%94%BB%E7%95%A5/" rel="tag"># 攻略</a>
               <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag"># 游戏</a>
-              <a href="/tags/%E5%88%86%E4%BA%AB/" rel="tag"># 分享</a>
               <a href="/tags/%E5%8D%95%E6%9C%BA/" rel="tag"># 单机</a>
           </div>
 
